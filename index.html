@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Passenger Counter</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+    #increment-btn {
+      background-color: #007bff;
+      color: white;
+    }
+    #save-btn {
+      background-color: #28a745;
+      color: white;
+    }
+    #entries {
+      margin-top: 30px;
+      font-size: 20px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="count-el">0</h1>
+  <button id="increment-btn" onclick="increment()">Increment</button>
+  <button id="save-btn" onclick="save()">Save</button>
+
+  <div id="entries">
+    Previous entries: <span id="save-el"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
